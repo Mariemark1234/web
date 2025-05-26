@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+       background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home { background: #f4f4f4; }
+    #about { background: #e8f0fe; }
+    #services { background: #d0f0c0; }
+    #contacts { background: #ffe0e0; }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Blog</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+  </header>
+
+  <section id="home" style="
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+">
+  <div class="container" style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+  ">
+    
+    <!-- Text Column -->
+    <div style="flex: 1; min-width: 280px; max-width: 500px; text-align: center;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Welcome to My Blog</h1>
+      <p style="font-size: 1.2rem; margin-bottom: 10px;">
+        Welcome! I am a passionate web designer who builds clean, responsive, and user-friendly websites.
+      </p>
+      <p style="font-size: 1.1rem; margin-bottom: 20px;">
+        With a strong eye for design and detail, I specialize in creating modern interfaces that engage users. Contact me for more details or collaboration opportunities.
+      </p>
+    </div>
+
+    <!-- Image Column -->
+    <div style="flex: 1; min-width: 280px; max-width: 550px; text-align: center;">
+      <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150061972.jpg?semt=ais_hybrid&w=740" alt="Web Designer" style="
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      ">
+    </div>
+  
+  </div>
+</section>
+
+
+
+
+  <section id="about" style="background: #e8f0fe; padding: 100px 20px;">
+  <div class="container" style="max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 20px;">About Me</h2>
+    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
+      Hello! I'm a creative and detail-oriented <strong>web designer & developer</strong> with a passion for turning ideas into visually engaging, user-friendly websites. With over <strong>3 years of experience</strong>, I specialize in crafting responsive web experiences using HTML, CSS, JavaScript, and modern frameworks.
+    </p>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      I love combining design with code to bring beautiful digital experiences to life. Whether it’s building personal portfolios, business landing pages, or e-commerce websites, I always focus on usability, accessibility, and clean code. Outside of work, I enjoy learning new technologies, contributing to open-source, and exploring UI/UX trends.
+    </p>
+  </div>
+</section>
+
+
+  <section id="services" style="background: #d0f0c0; padding: 100px 20px;">
+  <div class="container" style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 40px;">My Services</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+      <!-- Service 1 -->
+      <div style="flex: 1 1 250px; background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 15px;">Website Design</h3>
+        <p style="font-size: 1rem;">I create clean, modern, and responsive website designs that work seamlessly across devices and screen sizes.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div style="flex: 1 1 250px; background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 15px;">Front-End Development</h3>
+        <p style="font-size: 1rem;">I bring designs to life with clean, semantic HTML, CSS, and JavaScript — ensuring great performance and accessibility.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div style="flex: 1 1 250px; background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 15px;">Landing Pages</h3>
+        <p style="font-size: 1rem;">High-converting landing pages for products, portfolios, or campaigns — optimized for engagement and lead generation.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div style="flex: 1 1 250px; background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 15px;">Website Maintenance</h3>
+        <p style="font-size: 1rem;">Regular updates, content changes, bug fixes, and performance optimization to keep your website running smoothly.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contacts" style="background: #fefefe; padding: 100px 20px;">
+  <div class="container" style="max-width: 800px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Contact</h2>
+    
+    <p style="font-size: 1.1rem; margin-bottom: 40px;">
+      Email: you@example.com<br />
+      Phone: +123 456 7890
+    </p>
+
+    <!-- Profile / Contact Image -->
+    <img src="https://media.gettyimages.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=612x612&w=0&k=20&c=BFFIc-xOwzeRyR8ui9VkFKEqqqQFBbISJzr-ADN6hS8=" alt="Contact" style="border-radius: 50%; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+
+    <!-- Social Icons -->
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+
+      <!-- GitHub -->
+      <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+        <svg height="30" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0C3.58 0 0 3.58 0 ... Z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+        <svg height="30" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.6 3.2c-1.1-.4-3.6-.4-7.6-.4s-6.5 0-7.6.4C3 3.7 2 5.3 2 8v8c0 2.7 1 4.3 2.4 4.8 1.1.4 3.6.4 7.6.4s6.5 0 7.6-.4c1.5-.5 2.4-2.1 2.4-4.8V8c0-2.7-1-4.3-2.4-4.8zM10 15V9l5 3-5 3z"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <svg height="30" viewBox="0 0 24 24" fill="#0e76a8" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.2c.6-1.2 2-2.2 3.7-2.2 3.9 0 4.8 2.5 4.8 5.7V24h-5v-8.2c0-2-.1-4.5-2.8-4.5s-3.2 2.1-3.2 4.3V24h-5V8z"/>
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+        <svg height="30" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4.6c-.9.4-1.9.6-3 .8 1.1-.6 1.8-1.5 2.2-2.6 ... Z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
